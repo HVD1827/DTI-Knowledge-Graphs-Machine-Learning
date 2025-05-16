@@ -54,9 +54,14 @@ Target: Q16515
 .....
 ```
 ## FCAN-MOPSO Clustering
-// change directory and go to this that blah blah
-## SARS-Cov-2...
+Simply do python ./FSCAN-MOPSO_Clustering/fcsan_mopso_clustering.py
+
 ## Kuhn's Method
+Simply do python ./Kuhn's_Method/kuhn's_method.py
+
+## Analysis of SARS-CoV-2-Host Protein-Protein Interactions and Evolutionary Conservation
+Simply do python ./Evolutionary_Conservation/Evolutionary_Conservation.ipynb
+
 
 
 # Data description
