@@ -106,7 +106,7 @@ def BE_Prediction(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T):
     from sklearn.metrics import mean_squared_error, r2_score
     from sklearn.model_selection import train_test_split
 
-    # Load be.csv
+    
     be_df = pd.read_csv("be.csv")  # columns: drug,target,binding_energy
     be_dict = {(r["drug"], r["target"]): r["binding_energy"] for _, r in be_df.iterrows()}
 
@@ -117,10 +117,6 @@ def BE_Prediction(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T):
     # print first entry of embd and t
     print(emb_D.head(1))
     print(emb_T.head(1))
-    # print("First drugs in embedding:", list(emb_D.index)[:5])
-    # print("First targets in embedding:", list(emb_T.index)[:5])
-    # print("First drug IDs in Name_D:", list(Name_D.keys())[:5])
-    # print("First target IDs in Name_T:", list(Name_T.keys())[:5])
 
     data = []
     for (drug, target), be in be_dict.items():
@@ -183,7 +179,6 @@ def BE_Prediction(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T):
 
 
 def Drug_Target_Interaction_Prediction(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T, threshold=0.001):
-    # data loading and initialisation
     Gr_Bi = pd.read_csv(args.train_data, sep='\t', header=None)
     Vector_emb_D = args.KGE_drug
     Vector_emb_T = args.KGE_target
@@ -257,40 +252,7 @@ def Drug_Target_Interaction_Prediction(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Na
                     possible_new_dti.append([(i[0][2:], i[1][2:]), cal[i]])
             possible_new_dti.sort()
             matrix_ = pd.DataFrame(possible_new_dti)
-            # if not (matrix_.empty):
-            #     matrix_ = matrix_.sort_values(1, ascending=False)
-            #     New_DTI = np.array(matrix_)[:, :1][:30]
-            #     print('===== Predicted DTIs with top 30 probability scores =====')
-            #     print(New_DTI)
-            # else:
-            #     New_DTI = np.array(0)
-            #     print('================= No DTIs are predicted =================')
-            # if not matrix_.empty:
-            #     matrix_ = matrix_.sort_values(1, ascending=False)
-
-            #     # Build a dictionary: { drug_id: list of (target, score) }
-            #     topk_dict = {}
-            #     for (drug, target), score in matrix_.values:
-            #         if drug not in topk_dict:
-            #             topk_dict[drug] = []
-            #         topk_dict[drug].append((target, score))
-
-            #     # Extract top-3 targets per drug
-            #     top3_per_drug = {}
-            #     for drug, target_list in topk_dict.items():
-            #         top_targets = sorted(target_list, key=lambda x: x[1], reverse=True)[:3]
-            #         top3_per_drug[drug] = top_targets
-
-            #     print('===== Top-3 targets predicted per drug =====')
-            #     for drug, targets in top3_per_drug.items():
-            #         print(f"\nTop 3 targets for the drug {drug} are:")
-            #         for target, score in targets:
-            #             print(f"{target} {score:.4f}")
-
-            #     New_DTI = top3_per_drug
-            # else:
-            #     New_DTI = {}
-            #     print('================= No DTIs are predicted =================')
+           
             
             # predict top 3 drugs per target
             if not matrix_.empty:
@@ -380,7 +342,7 @@ def Cross_validation(New_v_couple_DTI, trees, c, fold_nums=20):
     for fold_num in range(fold_nums):
         counter += 1
         index = [fold_num]
-        # index_remain=set(list_)-set(index)
+
         temp_test = New_v_couple_DTI[fold_num]
         temp_train = copy.deepcopy(New_v_couple_DTI)
         temp_train.pop(fold_num)
@@ -388,7 +350,7 @@ def Cross_validation(New_v_couple_DTI, trees, c, fold_nums=20):
         random.shuffle(temp_train)
         X_train, Y_train, train_pair_name = [], [], []
         print(len(temp_train), len(temp_test))
-        # len(temp_train)=9,len(temp_test)=32182
+
         for one_fold in temp_train:
             for i in one_fold:
                 X_train.append(i[0])
@@ -398,8 +360,6 @@ def Cross_validation(New_v_couple_DTI, trees, c, fold_nums=20):
         Y_train = np.array(Y_train)
         X_test, Y_test, test_pair_name = [], [], []
         for i in temp_test:
-            # print(i[1])
-            # if(i[1]==0):
             X_test.append(i[0])
             Y_test.append(i[1])
             test_pair_name.append((i[2], i[3]))
@@ -438,7 +398,6 @@ def Cross_validation(New_v_couple_DTI, trees, c, fold_nums=20):
                                                                                                             mean_f1,
                                                                                                             total_time))
 
-    # Vous pouvez également imprimer ou enregistrer les matrices de confusion pour chaque fold ici
     for i, conf_matrix in enumerate(all_conf_matrix):
         print('Fold{} Confusion Matrix:'.format(i))
         print(conf_matrix)
@@ -531,15 +490,12 @@ def classifiers(X_train, Y_train, X_test, Y_test, test_pair_name, trees, c):
     AUPR = auc(recall, precision)
     AUC = roc_auc_score(Y_test, test_prob)
 
-    # Ajouter la prédiction de classe (0 ou 1)
     test_predictions = (test_prob >= 0.5).astype(int)
 
-    # Calculer les métriques d'évaluation
     accuracy = accuracy_score(Y_test, test_predictions)
     mcc = matthews_corrcoef(Y_test, test_predictions)
     f1 = f1_score(Y_test, test_predictions)
 
-    # Matrice de confusion
     conf_matrix = confusion_matrix(Y_test, test_predictions)
 
     return test_prob, AUPR, AUC, test_pair_name, accuracy, mcc, f1, conf_matrix
@@ -606,19 +562,6 @@ def create_new_vector(Vector_emb_D, Vector_emb_T, vertice_total, D, Mat_Int, Mat
     return New_v_couple_DTI
 
 
-def incremental_upd(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T):
-    # randomly remove 10 drugs from the dataset, update the similarity matrix and the drug-target interaction matrix
-    # test on the remaining drugs, if u add then one by one
-    set_to_be_removed = set()
-    num_of_drugs = len(Name_D)
-    num_of_drugs_to_remove = 10
-    # firstly map every drug to a vector of 0/1 which represent if it interacts with the ith target or not
-    # then rendomly select 10 indices to remove(test)
-    # get a new matrix similarity matrix and interaction matrix
-    # also update the embeddings by remocving the correspoding drug indices
-    # train and predict, also calculate the accuracy.
-    return 0
-
 import numpy as np
 import random
 import pandas as pd
@@ -675,11 +618,11 @@ def incremental_updation(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T):
     y_true = emb_D[removed_idx]
 
     mse = mean_squared_error(y_true, y_pred)
-    print(f"MSE between true and predicted embedding: {mse:.4f}")
+    print(f"MSE between true and prdicted embbedding: {mse:.4f}")
 
     # Predict interactions of this new drug with all targets
     X_dti = []
-    y_dti = Mat_Int[removed_idx]  # ground-truth for comparison
+    y_dti = Mat_Int[removed_idx]  
     for i in range(len(target_ids)):
         target_emb = emb_T[i]
         pair_feat = np.concatenate((y_pred, target_emb))
@@ -687,21 +630,12 @@ def incremental_updation(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T):
 
     X_dti = np.array(X_dti)
 
-    # # Dummy DTI model (replace with your actual trained model)
-    # dummy_X = np.random.rand(100, X_dti.shape[1])
-    # dummy_y = np.random.randint(0, 2, size=100)
-    # clf = RandomForestClassifier(n_estimators=100, random_state=42)
-    # clf.fit(dummy_X, dummy_y)
-
-    # y_scores = clf.predict_proba(X_dti)[:, 1]
-    # --- REPLACE YOUR DUMMY CLASSIFIER WITH THIS ---
-# Prepare REAL training data (all drugs except held-out one)
     X_train_dti = []
     y_train_dti = []
 
     for i in range(len(drug_ids)):
         if i == removed_idx: 
-            continue  # Skip the held-out drug
+            continue  # Skip the excluded drg
         for j in range(len(target_ids)):
             # Concatenate drug and target embeddings
             pair_feat = np.concatenate([emb_D[i], emb_T[j]]) 
@@ -715,9 +649,9 @@ def incremental_updation(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T):
     clf.fit(X_train_dti, y_train_dti)
 
 
-    # Predict for held-out drug
+    # Predict for excluded drug
     X_dti = [np.concatenate([y_pred, emb_T[j]]) for j in range(len(target_ids))]
-    y_probs = clf.predict_proba(X_dti)[:, 1]  # Get interaction probabilities
+    y_probs = clf.predict_proba(X_dti)[:, 1]  # interaction probabilities
 
     print("\nTop 10 predicted targets with scores:")
     top_indices = np.argsort(-y_probs)[:10]
