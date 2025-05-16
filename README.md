@@ -1,19 +1,64 @@
-# DTIOG
+# DTI-Knowledge Graphs-Machine Learning
 Enhancing Drug-Target Interaction Prediction: A Graph-Based Approach Integrating Knowledge Graph Embedding and Pretrained ProtBert Model.
 
-This tools presents a knowledge-graph (KG)-based, deep learning approach to discover potential drug-target interaction. Specifically,
-the approach is based on drug repositioning from the association between different phenotypic, genomic, diseases, and cellular profiles. After applying a knowledge graph embedding on a heterogeneous graph to learn feature representation for each drug and target, cosine similarity is calculated between each drug and target to construct new matrices similarities. 
+This project presents a knowledge-graph (KG)-based approach to indentify drug-target interaction. 
+After applying a knowledge graph embedding on a heterogeneous graph to learn feature representation for each drug and target, cosine similarity is calculated between each drug and target to construct new matrices similarities. 
 
-The main innovation of our approach is based on the flagship idea of building a knowledge graph on Homo-sapiens by combining many sources of information from public datasets related to drug discovery. Then, this information base will be the input of an algorithm based on the deep learning technique for predicting new interactions between drugs and targets.
+We predict the drug-target interaction by exploiting the local and contextual embeddings. We, then fuse drug-target pairs to train classifiers and then predict it for testing data.
 
-Authors: Warith Eddine DJEDDI, Khalil HERMI, Sadok BEN YAHIA and GAYO DIALLO
+# Improvements:
+1. Kuhn's Method
+2. FCAN-MOPSO Clustering
+3. SARS-Cov-2-Host Protein Protein Interactions
+4. Incremental embedding update
+5. Lightweight Classifiers
+6. Informative Outputs
 
-Email: waritheddine.jeddi@isikef.u-jendouba.tn
+Authors: Harsh Vardhan Daga (cs22b075) Rajeev Rangarajan Balaji
 
 # Quick start
 To reproduce our results:
-1. Untar the file "DTIOG-master.tar.xz"
-2. Run <code>pred_new_dti.py</code> to reproduce the cross validation results of DTIOG and predict drug-target interaction using a given classifier (e.g., ExtraTreesClassifier, DecisionTreeClassifier, MLPClassifier or RandomForestClassifier).
+1. Clone the repository
+2. Run <code>pred_new_dti.py</code> to reproduce the cross validation results of DTI and predict drug-target interaction using a given classifier (eg. KNN(neighbors = 2)).
+
+# Improvements
+To verify the improvements, follow improvement specific steps:
+## Incremental embeddings
+To re-generate the results just run the code <code>pred_new_dti.py</code>. It randomly removes a drug from the dataset and predict it's embeddings. The number of drug removed can be varied depending on the need and specification.
+## LightWeight Models
+You have to select on of the classifiers commented in the code <code>pred_new_dti.py</code> as:
+```
+############-----models------#######################
+    # model = KNeighborsClassifier(n_neighbors=2)
+    # model = svm.SVC(decision_function_shape='ovo') useless
+    # model = NearestCentroid()
+    # model = HistGradientBoostingClassifier(max_iter=100).fit(X_train, Y_train)
+    # model = KNeighborsClassifier(n_neighbors=8)
+    # model = XGBClassifier(n_estimators=100, learning_rate=0.1, use_label_encoder=False, eval_metric='logloss')
+
+```
+After this, we also automated the tuning of hyperparameters for different models.
+## Informative Outputs
+This is included as the part of the code  <code>pred_new_dti.py</code>. This can also be modified depending on the user's need and is outputted in a file <code>top_drug_predictions.txt</code>. 
+```
+Top-3 Drug-Target Predictions
+============================
+Target: Q9UIX4
+1. DB00312 (Score: 0.8989)
+2. DB01159 (Score: 0.7422)
+3. DB00996 (Score: 0.6734)
+Target: Q16515
+1. DB00312 (Score: 0.8982)
+2. DB01119 (Score: 0.8472)
+3. DB00661 (Score: 0.8445)
+.....
+```
+## FCAN-MOPSO Clustering
+// change directory and go to this that blah blah
+## SARS-Cov-2...
+## Kuhn's Method
+
+
 # Data description
 The whole dataset contains many part:
 - "KGE/data/knowgraph_all.tsv", a tsv file containing the knowledge graph in the format of (h, r, t) triplets.

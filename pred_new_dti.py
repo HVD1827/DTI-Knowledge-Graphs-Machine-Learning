@@ -271,12 +271,21 @@ def Drug_Target_Interaction_Prediction(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Na
                     top_drugs = sorted(drug_list, key=lambda x: x[1], reverse=True)[:3]
                     top3_per_target[target] = top_drugs
 
-                print('===== Top-3 drugs predicted per target =====')
-                for target, drugs in top3_per_target.items():
-                    print(f"\nTop 3 drugs for the target {target} are:")
-                    for drug, score in drugs:
-                        print(f"{drug} {score:.4f}")
-
+                # print('===== Top-3 drugs predicted per target =====')
+                # for target, drugs in top3_per_target.items():
+                #     print(f"\nTop 3 drugs for the target {target} are:")
+                #     for drug, score in drugs:
+                #         print(f"{drug} {score:.4f}")
+                # Save to text file
+                text_file = "top_drug_predictions.txt"
+                with open(text_file, 'w') as f:
+                    f.write("Top-3 Drug-Target Predictions\n")
+                    f.write("============================\n\n")
+                    for target, drugs in top3_per_target.items():
+                        f.write(f"Target: {target}\n")
+                        for rank, (drug, score) in enumerate(drugs, 1):
+                            f.write(f"{rank}. {drug} (Score: {score:.4f})\n")
+                    f.write("\n")
                 New_DTI = top3_per_target
             else:
                 New_DTI = {}
@@ -386,20 +395,25 @@ def Cross_validation(New_v_couple_DTI, trees, c, fold_nums=20):
 
     mean_AUPR = np.mean(all_AUPR)
     mean_AUC = np.mean(all_AUC)
+    std_dev_AUPR = np.std(all_AUPR)
+    std_dev_AUC = np.std(all_AUC)
     mean_accuracy = np.mean(all_accuracy)
     mean_mcc = np.mean(all_mcc)
     mean_f1 = np.mean(all_f1)
     total_time = np.mean(all_time)*fold_nums
-    print('mean_AUPR:{:.5f}, mean_AUC:{:.5f}, mean_Accuracy:{:.5f}, mean_MCC:{:.5f}, mean_F1:{:.5f}, total_time:{:.5f}'.format(mean_AUPR,
+    print('mean_AUPR:{:.5f}, std_dev_AUPR:{:.5f}, mean_AUC:{:.5f}, std_dev_AUC:{:.5f}, mean_Accuracy:{:.5f}, mean_MCC:{:.5f}, mean_F1:{:.5f}, total_time:{:.5f}'.format(
+                                                                                                            mean_AUPR,
+                                                                                                            std_dev_AUPR,
                                                                                                             mean_AUC,
+                                                                                                            std_dev_AUC,
                                                                                                             mean_accuracy,
                                                                                                             mean_mcc,
                                                                                                             mean_f1,
                                                                                                             total_time))
 
-    for i, conf_matrix in enumerate(all_conf_matrix):
-        print('Fold{} Confusion Matrix:'.format(i))
-        print(conf_matrix)
+    # for i, conf_matrix in enumerate(all_conf_matrix):
+    #     print('Fold{} Confusion Matrix:'.format(i))
+    #     print(conf_matrix)
 
     return all_scores, all_AUPR, all_AUC, name_DTI
 
@@ -434,7 +448,7 @@ def classifiers(X_train, Y_train, X_test, Y_test, test_pair_name, trees, c):
     # model = SVC(kernel='rbf', probability=True)
 
     ############-----models------#######################
-    # model = KNeighborsClassifier(n_neighbors=2)
+    model = KNeighborsClassifier(n_neighbors=2)
     # model = svm.SVC(decision_function_shape='ovo') useless
     # model = NearestCentroid()
     # model = HistGradientBoostingClassifier(max_iter=100).fit(X_train, Y_train)
@@ -446,7 +460,7 @@ def classifiers(X_train, Y_train, X_test, Y_test, test_pair_name, trees, c):
     # model = CatBoostClassifier(iterations=20, learning_rate=0.1, depth=6, verbose=0)
     #include ridge
     
-    model = RidgeClassifier(alpha=1.0)
+    # model = RidgeClassifier(alpha=1.0)
     
     # model = PassiveAggressiveClassifier(max_iter=500, random_state=42)
     
@@ -483,7 +497,7 @@ def classifiers(X_train, Y_train, X_test, Y_test, test_pair_name, trees, c):
     # )
     ############-----end models----#######################
     model.fit(X_train_maxabs_transform, Y_train)
-    test_prob = model._predict_proba_lr(X_test_maxabs_transform)[:, 1]
+    test_prob = model.predict_proba(X_test_maxabs_transform)[:, 1]
     precision, recall, _ = precision_recall_curve(Y_test, test_prob)
 
     AUPR = auc(recall, precision)

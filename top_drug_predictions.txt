@@ -1,0 +1,638 @@
+Top-3 Drug-Target Predictions
+============================
+
+Target: O43424
+1. DB00142 (Score: 1.0000)
+2. DB00201 (Score: 0.5000)
+Target: Q9H1D0
+1. DB00740 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00142 (Score: 0.5000)
+Target: Q14003
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: Q01668
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+Target: Q00975
+1. DB00653 (Score: 1.0000)
+2. DB00617 (Score: 1.0000)
+3. DB00312 (Score: 1.0000)
+Target: P35499
+1. DB00653 (Score: 1.0000)
+2. DB00568 (Score: 1.0000)
+3. DB00343 (Score: 1.0000)
+Target: P17658
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: O43526
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: O43525
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: O00305
+1. DB00653 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00312 (Score: 0.5000)
+Target: Q9H252
+1. DB00637 (Score: 1.0000)
+2. DB00604 (Score: 1.0000)
+3. DB00342 (Score: 1.0000)
+Target: Q14524
+1. DB00637 (Score: 1.0000)
+2. DB00604 (Score: 1.0000)
+3. DB00342 (Score: 1.0000)
+Target: P15382
+1. DB00637 (Score: 1.0000)
+2. DB00604 (Score: 1.0000)
+3. DB00342 (Score: 1.0000)
+Target: P47869
+1. DB00628 (Score: 1.0000)
+2. DB00474 (Score: 1.0000)
+3. DB01189 (Score: 1.0000)
+Target: Q9NY72
+1. DB00617 (Score: 1.0000)
+2. DB00312 (Score: 1.0000)
+3. DB00201 (Score: 1.0000)
+Target: Q15878
+1. DB00617 (Score: 1.0000)
+2. DB00312 (Score: 1.0000)
+3. DB00909 (Score: 1.0000)
+Target: O95180
+1. DB00617 (Score: 1.0000)
+2. DB01202 (Score: 0.5000)
+3. DB00347 (Score: 0.5000)
+Target: O43497
+1. DB00617 (Score: 1.0000)
+2. DB00201 (Score: 0.5000)
+3. DB00381 (Score: 0.5000)
+Target: P48058
+1. DB00606 (Score: 1.0000)
+2. DB00142 (Score: 0.5000)
+3. DB00502 (Score: 0.5000)
+Target: P42261
+1. DB00606 (Score: 1.0000)
+2. DB00312 (Score: 0.5000)
+3. DB00142 (Score: 0.5000)
+Target: Q9NS40
+1. DB00604 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00342 (Score: 0.5000)
+Target: O00555
+1. DB00593 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00909 (Score: 0.5000)
+Target: Q9UQD0
+1. DB00564 (Score: 1.0000)
+2. DB00661 (Score: 1.0000)
+3. DB00740 (Score: 1.0000)
+Target: Q15858
+1. DB00564 (Score: 1.0000)
+2. DB00740 (Score: 1.0000)
+3. DB00661 (Score: 1.0000)
+Target: Q8TDN2
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: Q92953
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: Q96KK3
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: P17787
+1. DB00674 (Score: 1.0000)
+2. DB00657 (Score: 1.0000)
+3. DB00318 (Score: 1.0000)
+Target: Q13002
+1. DB00740 (Score: 1.0000)
+2. DB00201 (Score: 0.5000)
+Target: P62955
+1. DB00740 (Score: 1.0000)
+2. DB00142 (Score: 1.0000)
+3. DB00201 (Score: 0.5000)
+Target: Q01959
+1. DB00726 (Score: 1.0000)
+2. DB00715 (Score: 1.0000)
+3. DB00543 (Score: 1.0000)
+Target: Q9UI33
+1. DB00721 (Score: 1.0000)
+2. DB00555 (Score: 1.0000)
+3. DB00312 (Score: 1.0000)
+Target: Q01118
+1. DB00721 (Score: 1.0000)
+2. DB00555 (Score: 1.0000)
+3. DB00312 (Score: 1.0000)
+Target: P23975
+1. DB00715 (Score: 1.0000)
+2. DB00514 (Score: 1.0000)
+3. DB01151 (Score: 1.0000)
+Target: P36544
+1. DB00690 (Score: 1.0000)
+2. DB00683 (Score: 1.0000)
+3. DB00404 (Score: 1.0000)
+Target: Q9UGI6
+1. DB00674 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00988 (Score: 0.5000)
+Target: P46098
+1. DB00674 (Score: 1.0000)
+2. DB00657 (Score: 1.0000)
+3. DB00318 (Score: 1.0000)
+Target: Q8WXA8
+1. DB00669 (Score: 1.0000)
+2. DB00370 (Score: 1.0000)
+3. DB00363 (Score: 1.0000)
+Target: Q96PR1
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: Q70Z44
+1. DB00669 (Score: 1.0000)
+2. DB00363 (Score: 1.0000)
+3. DB01233 (Score: 1.0000)
+Target: O95069
+1. DB00661 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB01119 (Score: 0.5000)
+Target: Q9Y5Y9
+1. DB00653 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB01054 (Score: 0.5000)
+Target: Q9ULS6
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: Q9UBN1
+1. DB00653 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00312 (Score: 0.5000)
+Target: Q9HB14
+1. DB00653 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB01054 (Score: 0.5000)
+Target: Q9H3M0
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: Q9BQ31
+1. DB00653 (Score: 1.0000)
+2. DB00343 (Score: 1.0000)
+3. DB01195 (Score: 1.0000)
+Target: Q8TDN1
+1. DB00343 (Score: 1.0000)
+2. DB01195 (Score: 0.5000)
+3. DB00653 (Score: 0.5000)
+Target: Q03721
+1. DB00343 (Score: 1.0000)
+2. DB01195 (Score: 1.0000)
+3. DB00653 (Score: 0.5000)
+Target: Q9Y698
+1. DB00312 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00142 (Score: 0.5000)
+Target: Q9NZV8
+1. DB00312 (Score: 1.0000)
+2. DB00297 (Score: 1.0000)
+3. DB01195 (Score: 0.5000)
+Target: Q9NSA2
+1. DB00312 (Score: 1.0000)
+2. DB00297 (Score: 1.0000)
+3. DB00908 (Score: 0.5000)
+Target: Q16322
+1. DB00312 (Score: 1.0000)
+2. DB00908 (Score: 1.0000)
+Target: Q14721
+1. DB00312 (Score: 1.0000)
+2. DB00468 (Score: 1.0000)
+3. DB12312 (Score: 1.0000)
+Target: Q07001
+1. DB00312 (Score: 1.0000)
+2. DB00411 (Score: 1.0000)
+3. DB00184 (Score: 1.0000)
+Target: Q8TCU5
+1. DB00502 (Score: 1.0000)
+Target: P42262
+1. DB00502 (Score: 1.0000)
+2. DB00312 (Score: 1.0000)
+3. DB00142 (Score: 1.0000)
+Target: Q9Y257
+1. DB00468 (Score: 1.0000)
+2. DB00237 (Score: 1.0000)
+3. DB00204 (Score: 1.0000)
+Target: Q96T55
+1. DB00468 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB01025 (Score: 0.5000)
+Target: P30532
+1. DB00411 (Score: 1.0000)
+2. DB00357 (Score: 1.0000)
+3. DB01233 (Score: 1.0000)
+Target: P02708
+1. DB00404 (Score: 1.0000)
+2. DB00308 (Score: 1.0000)
+3. DB01069 (Score: 0.5000)
+Target: Q13698
+1. DB00393 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+Target: O95264
+1. DB00370 (Score: 1.0000)
+2. DB00889 (Score: 1.0000)
+3. DB00184 (Score: 1.0000)
+Target: Q99250
+1. DB00740 (Score: 1.0000)
+2. DB01086 (Score: 0.5000)
+3. DB00909 (Score: 0.5000)
+Target: Q9UBL9
+1. DB00740 (Score: 1.0000)
+2. DB00142 (Score: 1.0000)
+3. DB00996 (Score: 0.5000)
+Target: P48167
+1. DB00312 (Score: 1.0000)
+2. DB01159 (Score: 1.0000)
+3. DB01189 (Score: 1.0000)
+Target: P23416
+1. DB01189 (Score: 1.0000)
+2. DB01159 (Score: 1.0000)
+3. DB00753 (Score: 1.0000)
+Target: O75311
+1. DB01189 (Score: 1.0000)
+2. DB01159 (Score: 1.0000)
+3. DB01236 (Score: 1.0000)
+Target: Q9Y6H6
+1. DB01159 (Score: 1.0000)
+2. DB01026 (Score: 1.0000)
+Target: Q9GZU1
+1. DB01159 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00909 (Score: 0.5000)
+Target: O60928
+1. DB01159 (Score: 1.0000)
+2. DB00252 (Score: 1.0000)
+3. DB00201 (Score: 1.0000)
+Target: Q14654
+1. DB01124 (Score: 1.0000)
+2. DB01119 (Score: 1.0000)
+3. DB01025 (Score: 1.0000)
+Target: O60706
+1. DB01124 (Score: 1.0000)
+2. DB01119 (Score: 1.0000)
+3. DB01025 (Score: 1.0000)
+Target: Q9HB15
+1. DB01115 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB01054 (Score: 0.5000)
+Target: Q15413
+1. DB01219 (Score: 1.0000)
+2. DB00270 (Score: 1.0000)
+3. DB01159 (Score: 0.5000)
+Target: P98161
+1. DB01104 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00343 (Score: 0.5000)
+Target: Q09428
+1. DB00909 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB01252 (Score: 0.5000)
+Target: P13569
+1. DB00909 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB01025 (Score: 0.5000)
+Target: P16389
+1. DB00908 (Score: 1.0000)
+2. DB00312 (Score: 1.0000)
+Target: O95279
+1. DB00829 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00142 (Score: 0.5000)
+Target: Q06432
+1. DB01023 (Score: 1.0000)
+2. DB00623 (Score: 0.5000)
+Target: P51788
+1. DB01054 (Score: 1.0000)
+2. DB00201 (Score: 1.0000)
+3. DB00909 (Score: 0.5000)
+Target: P51575
+1. DB01054 (Score: 1.0000)
+2. DB00312 (Score: 1.0000)
+3. DB00909 (Score: 0.5000)
+Target: P54289
+1. DB01023 (Score: 1.0000)
+2. DB00393 (Score: 0.5000)
+3. DB00623 (Score: 0.5000)
+Target: Q9P1Z3
+1. DB00201 (Score: 1.0000)
+2. DB00142 (Score: 0.5000)
+3. DB00740 (Score: 0.5000)
+Target: Q9P0X4
+1. DB00201 (Score: 1.0000)
+2. DB01195 (Score: 0.5000)
+3. DB01119 (Score: 0.5000)
+Target: Q9NYG8
+1. DB00201 (Score: 1.0000)
+2. DB01054 (Score: 0.5000)
+3. DB00312 (Score: 0.5000)
+Target: Q9NY47
+1. DB00201 (Score: 1.0000)
+2. DB00909 (Score: 0.5000)
+3. DB00312 (Score: 0.5000)
+Target: Q9NPI9
+1. DB00201 (Score: 1.0000)
+Target: Q9NPC2
+1. DB00201 (Score: 1.0000)
+Target: Q9NPA1
+1. DB00201 (Score: 1.0000)
+Target: Q7Z3S7
+1. DB00201 (Score: 1.0000)
+2. DB00909 (Score: 0.5000)
+3. DB00312 (Score: 0.5000)
+Target: Q99928
+1. DB00201 (Score: 1.0000)
+Target: Q99884
+1. DB00201 (Score: 1.0000)
+2. DB01119 (Score: 0.5000)
+3. DB00829 (Score: 0.5000)
+Target: Q99712
+1. DB00201 (Score: 1.0000)
+Target: Q96T54
+1. DB00201 (Score: 1.0000)
+2. DB00740 (Score: 0.5000)
+Target: Q92952
+1. DB00201 (Score: 1.0000)
+2. DB01054 (Score: 0.5000)
+3. DB00909 (Score: 0.5000)
+Target: Q92806
+1. DB00201 (Score: 1.0000)
+2. DB00142 (Score: 0.5000)
+Target: Q8WWG9
+1. DB00201 (Score: 1.0000)
+2. DB00312 (Score: 0.5000)
+3. DB00297 (Score: 0.5000)
+Target: Q8IZS8
+1. DB00201 (Score: 1.0000)
+2. DB00909 (Score: 0.5000)
+3. DB00312 (Score: 0.5000)
+Target: Q8IWT1
+1. DB00201 (Score: 1.0000)
+2. DB01054 (Score: 0.5000)
+3. DB00312 (Score: 0.5000)
+Target: Q9UJ90
+1. DB00201 (Score: 1.0000)
+Target: Q9UN76
+1. DB00201 (Score: 1.0000)
+2. DB00726 (Score: 0.5000)
+Target: P54284
+1. DB00270 (Score: 1.0000)
+2. DB00201 (Score: 0.5000)
+3. DB00653 (Score: 0.5000)
+Target: P34903
+1. DB00237 (Score: 1.0000)
+2. DB00628 (Score: 0.5000)
+3. DB00842 (Score: 0.5000)
+Target: O95259
+1. DB00204 (Score: 1.0000)
+2. DB00201 (Score: 0.5000)
+Target: Q9Y210
+1. DB00201 (Score: 1.0000)
+2. DB00996 (Score: 0.5000)
+3. DB01159 (Score: 0.5000)
+Target: Q9UN88
+1. DB00201 (Score: 1.0000)
+Target: Q86W47
+1. DB00201 (Score: 1.0000)
+Target: Q16558
+1. DB00201 (Score: 1.0000)
+Target: Q92736
+1. DB00270 (Score: 1.0000)
+2. DB01023 (Score: 0.5000)
+Target: P31644
+1. DB00201 (Score: 1.0000)
+Target: P28476
+1. DB00201 (Score: 1.0000)
+2. DB00292 (Score: 1.0000)
+3. DB01236 (Score: 0.5000)
+Target: P24046
+1. DB00201 (Score: 1.0000)
+2. DB00628 (Score: 0.5000)
+Target: O75762
+1. DB00201 (Score: 1.0000)
+2. DB00142 (Score: 0.5000)
+3. DB00740 (Score: 0.5000)
+Target: O15554
+1. DB00201 (Score: 1.0000)
+2. DB01054 (Score: 0.5000)
+Target: O15399
+1. DB00201 (Score: 1.0000)
+Target: Q16515
+1. DB00201 (Score: 1.0000)
+2. DB00909 (Score: 0.5000)
+3. DB00996 (Score: 0.5000)
+Target: O00180
+1. DB00201 (Score: 1.0000)
+Target: P30531
+1. DB00172 (Score: 1.0000)
+2. DB01236 (Score: 0.5000)
+3. DB00962 (Score: 0.5000)
+Target: P42263
+1. DB00142 (Score: 1.0000)
+2. DB00201 (Score: 0.5000)
+3. DB00606 (Score: 0.5000)
+Target: P31645
+1. DB00201 (Score: 1.0000)
+2. DB00142 (Score: 0.5000)
+3. DB00312 (Score: 0.5000)
+Target: P43681
+1. DB00201 (Score: 1.0000)
+2. DB01006 (Score: 0.5000)
+3. DB00990 (Score: 0.5000)
+Target: P48048
+1. DB00201 (Score: 1.0000)
+2. DB00142 (Score: 0.5000)
+3. DB01120 (Score: 0.5000)
+Target: P48050
+1. DB00201 (Score: 1.0000)
+Target: Q15842
+1. DB00201 (Score: 1.0000)
+2. DB00308 (Score: 0.5000)
+3. DB01252 (Score: 0.5000)
+Target: Q14722
+1. DB00201 (Score: 1.0000)
+2. DB00312 (Score: 0.5000)
+3. DB00142 (Score: 0.5000)
+Target: Q14500
+1. DB00201 (Score: 1.0000)
+Target: Q13003
+1. DB00201 (Score: 1.0000)
+Target: Q12809
+1. DB00201 (Score: 1.0000)
+2. DB01023 (Score: 0.5000)
+3. DB01056 (Score: 0.5000)
+Target: Q12791
+1. DB00201 (Score: 1.0000)
+2. DB00142 (Score: 0.5000)
+3. DB00740 (Score: 0.5000)
+Target: Q07699
+1. DB00201 (Score: 1.0000)
+Target: Q05586
+1. DB00201 (Score: 1.0000)
+Target: Q02641
+1. DB00201 (Score: 1.0000)
+2. DB01023 (Score: 0.5000)
+Target: P78508
+1. DB00201 (Score: 1.0000)
+2. DB00343 (Score: 0.5000)
+3. DB01195 (Score: 0.5000)
+Target: P78348
+1. DB00201 (Score: 1.0000)
+2. DB00343 (Score: 0.5000)
+3. DB01195 (Score: 0.5000)
+Target: P63252
+1. DB00201 (Score: 1.0000)
+2. DB00142 (Score: 0.5000)
+3. DB00740 (Score: 0.5000)
+Target: P57789
+1. DB00201 (Score: 1.0000)
+2. DB01159 (Score: 0.5000)
+3. DB00653 (Score: 0.5000)
+Target: P51172
+1. DB00201 (Score: 1.0000)
+Target: P48549
+1. DB00201 (Score: 1.0000)
+Target: P48544
+1. DB00201 (Score: 1.0000)
+Target: P48051
+1. DB00201 (Score: 1.0000)
+2. DB00543 (Score: 0.5000)
+Target: P22459
+1. DB00297 (Score: 1.0000)
+Target: O15547
+1. DB01025 (Score: 0.5000)
+Target: P21817
+1. DB01023 (Score: 0.5000)
+2. DB00343 (Score: 0.5000)
+3. DB00312 (Score: 0.5000)
+Target: Q9NR82
+1. DB01244 (Score: 0.5000)
+Target: Q08289
+1. DB00308 (Score: 0.5000)
+2. DB00312 (Score: 0.5000)
+Target: Q15825
+1. DB01006 (Score: 0.5000)
+2. DB00990 (Score: 0.5000)
+3. DB01217 (Score: 0.5000)
+Target: Q15822
+1. DB01006 (Score: 0.5000)
+2. DB00990 (Score: 0.5000)
+3. DB01217 (Score: 0.5000)
+Target: P32297
+1. DB00308 (Score: 0.5000)
+2. DB00404 (Score: 0.5000)
+3. DB00514 (Score: 0.5000)
+Target: Q12879
+1. DB00201 (Score: 0.5000)
+Target: P78334
+1. DB00201 (Score: 0.5000)
+Target: P35498
+1. DB01086 (Score: 0.5000)
+2. DB00996 (Score: 0.5000)
+3. DB00252 (Score: 0.5000)
+Target: P11230
+1. DB00312 (Score: 0.5000)
+2. DB00184 (Score: 0.5000)
+3. DB00411 (Score: 0.5000)
+Target: P51787
+1. DB00201 (Score: 0.5000)
+Target: Q9Y6J6
+1. DB01026 (Score: 0.5000)
+Target: Q8NCM2
+1. DB00909 (Score: 0.5000)
+2. DB00201 (Score: 0.5000)
+Target: Q16445
+1. DB00201 (Score: 0.5000)
+Target: Q14643
+1. DB00201 (Score: 0.5000)
+2. DB00593 (Score: 0.5000)
+Target: Q9UGM1
+1. DB00960 (Score: 0.5000)
+2. DB00988 (Score: 0.5000)
+3. DB00904 (Score: 0.5000)
+Target: Q9H2S1
+1. DB00996 (Score: 0.5000)
+2. DB00237 (Score: 0.5000)
+3. DB00715 (Score: 0.5000)
+Target: P48169
+1. DB01355 (Score: 0.5000)
+2. DB00474 (Score: 0.5000)
+3. DB00801 (Score: 0.5000)
+Target: Q14573
+1. DB00201 (Score: 0.5000)
+Target: Q13224
+1. DB00201 (Score: 0.5000)
+Target: Q13303
+1. DB00201 (Score: 0.5000)
+Target: Q6PIU1
+1. DB00312 (Score: 0.5000)
+2. DB00908 (Score: 0.5000)
+Target: O60840
+1. DB00201 (Score: 0.5000)
+Target: Q93086
+1. DB00142 (Score: 0.5000)
+2. DB00740 (Score: 0.5000)
+Target: Q9NY46
+1. DB01202 (Score: 0.5000)
+2. DB01121 (Score: 0.5000)
+3. DB00273 (Score: 0.5000)
+Target: Q99572
+1. DB00142 (Score: 0.5000)
+2. DB00568 (Score: 0.5000)
+3. DB00740 (Score: 0.5000)
+Target: A5X5Y0
+1. DB00184 (Score: 0.5000)
+2. DB00889 (Score: 0.5000)
+3. DB00370 (Score: 0.5000)
+Target: Q09470
+1. DB00312 (Score: 0.5000)
+2. DB00908 (Score: 0.5000)
+Target: P18507
+1. DB00201 (Score: 0.5000)
+Target: P23415
+1. DB00201 (Score: 0.5000)
+Target: P47870
+1. DB00201 (Score: 0.5000)
+Target: Q9UK17
+1. DB00908 (Score: 0.5000)
+Target: P28472
+1. DB00201 (Score: 0.5000)
+2. DB00349 (Score: 0.5000)
+Target: P37088
+1. DB00201 (Score: 0.5000)
+Target: P56373
+1. DB01119 (Score: 0.5000)
+2. DB00661 (Score: 0.5000)
+Target: Q9UIX4
+1. DB00908 (Score: 0.5000)
+Target: Q9GZZ6
+1. DB00514 (Score: 0.5000)
+2. DB00810 (Score: 0.5000)
+Target: Q9H427
+1. DB00201 (Score: 0.5000)
+Target: Q99571
+1. DB00740 (Score: 0.5000)
+Target: Q14957
+1. DB00740 (Score: 0.5000)
+Target: P22001
+1. DB00908 (Score: 0.5000)
+Target: Q96FT7
+1. DB00201 (Score: 0.5000)
+Target: O60391
+1. DB00740 (Score: 0.5000)
+Target: Q9UHC3
+1. DB00201 (Score: 0.5000)
+
