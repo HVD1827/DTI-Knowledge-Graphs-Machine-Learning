@@ -66,10 +66,7 @@ python ./kuhn's_method.py
 ```
 
 ## Analysis of SARS-CoV-2-Host Protein-Protein Interactions and Evolutionary Conservation
-Simply do 
-```
-python ./Evolutionary_Conservation.ipynb
-```
+Simply run the ipynb file
 
 
 
