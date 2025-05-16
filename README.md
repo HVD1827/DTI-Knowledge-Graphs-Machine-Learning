@@ -58,15 +58,17 @@ Simply do
 ```
 python ./fcsan_mopso_clustering.py
 ```
+It will run the FCAN-MOPSO Clustering Method and produce results accordingly for different values of alpha.
 
 ## Kuhn's Method
 Simply do 
 ```
 python ./kuhn's_method.py
 ```
+It will run the Kuhn's Method and produce results accordingly for different combinations of hyperparams.
 
 ## Analysis of SARS-CoV-2-Host Protein-Protein Interactions and Evolutionary Conservation
-Simply run the ipynb file
+Run the Evolutionary_Conservation.ipynb file, it will produce the centrality comparison for viral and non-viral targets + Top 20 targets present in mouse for the SARSCOV2.
 
 
 
