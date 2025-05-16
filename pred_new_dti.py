@@ -350,7 +350,6 @@ def Cross_validation(New_v_couple_DTI, trees, c, fold_nums=20):
         random.shuffle(temp_train)
         X_train, Y_train, train_pair_name = [], [], []
         print(len(temp_train), len(temp_test))
-
         for one_fold in temp_train:
             for i in one_fold:
                 X_train.append(i[0])
@@ -491,7 +490,6 @@ def classifiers(X_train, Y_train, X_test, Y_test, test_pair_name, trees, c):
     AUC = roc_auc_score(Y_test, test_prob)
 
     test_predictions = (test_prob >= 0.5).astype(int)
-
     accuracy = accuracy_score(Y_test, test_predictions)
     mcc = matthews_corrcoef(Y_test, test_predictions)
     f1 = f1_score(Y_test, test_predictions)
@@ -523,7 +521,7 @@ def create_new_vector(Vector_emb_D, Vector_emb_T, vertice_total, D, Mat_Int, Mat
         for k in j:
             temp.append(tuple(list(k) + [0]))
 
-        for l in D: 
+        for l in D:
             for m in D[l]:
                 temp.append((l, m, 1))
 
@@ -643,15 +641,16 @@ def incremental_updation(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T):
             y_train_dti.append(Mat_Int[i, j])  # 0 or 1
 
     # Train classifier on REAL pairs
-    # clf = RandomForestClassifier(n_estimators=100, random_state=42)
-    # clf.fit(X_train_dti, y_train_dti)
-    clf = Ridge(alpha=1.0)
+    clf = RandomForestClassifier(n_estimators=100, random_state=42)
     clf.fit(X_train_dti, y_train_dti)
+    # clf = Ridge(alpha=1.0)
+    # clf.fit(X_train_dti, y_train_dti)
 
 
     # Predict for excluded drug
     X_dti = [np.concatenate([y_pred, emb_T[j]]) for j in range(len(target_ids))]
-    y_probs = clf.predict_proba(X_dti)[:, 1]  # interaction probabilities
+    # y_probs = clf._predict_proba_lr(X_dti)[:, 1]  # interaction probabilities
+    y_probs = clf.predict_proba(X_dti)[:, 1]
 
     print("\nTop 10 predicted targets with scores:")
     top_indices = np.argsort(-y_probs)[:10]
@@ -661,11 +660,9 @@ def incremental_updation(args, Mat_Int, Mat_Sim_DD, Mat_Sim_TT, Name_D, Name_T):
     return mse
 
 
-
 if __name__ == "__main__":
     embedding_similarities()
-    convert_drug_drug_similarities_to_matrix("./data/input_embedding_dict/ic/eucludian_similarities_ic_proteins.txt")
+    convert_drug_drug_similarities_to_matrix("./data/input_embedding_dict/ic/eucludian_similarities_ic_drugs.txt")
     convert_target_target_similarities_to_matrix("./data/input_embedding_dict/ic/eucludian_similarities_ic_proteins.txt")
     adding_identifier_to_identifier()
-    # preprocessing done, now call main function
     sys.exit(main())
