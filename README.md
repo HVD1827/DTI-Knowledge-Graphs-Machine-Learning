@@ -14,7 +14,7 @@ We predict the drug-target interaction by exploiting the local and contextual em
 5. Lightweight Classifiers
 6. Informative Outputs
 
-Authors: Harsh Vardhan Daga (cs22b075) Rajeev Rangarajan Balaji
+Authors: Harsh Vardhan Daga (cs22b075), Rajeev Rangarajan Balaji(cs22b094)
 
 # Quick start
 To reproduce our results:
